@@ -1,0 +1,1 @@
+The files with *.jmp extension are readable with JMP statistics software, they just report the data already provided here, in order to run statistical analyses, which can be performed with any other software.

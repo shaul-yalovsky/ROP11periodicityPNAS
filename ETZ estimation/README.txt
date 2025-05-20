@@ -1,0 +1,5 @@
+The "linearfit.m" and "linearfit_final_june27.m" are two MATLAB files (one the updated version of the other) that run on an input file that comes from the elaboration of the X, Y coordinates given by ImageJ of a given (confocal) image, when the multiple point tool was used to mark the borders of the maturing root cells. According to the distance formula reported in the methods (appendix of the paper), new data is generated, and needs to be saved in a text(.txt) file tab delimited where X (left column) corresponds to the number of cells from the QC, and Y(second column, towards right) is the calculated distance between the two points (given their coordinates X1,Y1 and X2,Y2). 
+
+This latter file is named (for example) as 'Col-0_mock.txt' and its name put in the MATLAB script line that codes: A=dlmread('Col-0_mock.txt'); at this point, the script is ready to be run.
+
+For your convenience, an example file of input has been added to this folder (Col-0_mock.txt).

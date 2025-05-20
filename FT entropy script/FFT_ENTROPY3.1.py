@@ -53,7 +53,7 @@ def SI_calc(symb,Lag,D):
 
 ################################################################################################
 # INPUT PARAMETERS #
-nameout= "FT_Entropy_rop10.1.1_rop11.3.2_mock.txt" # sys.argv[1]      #name output file for gap statistics
+nameout= "FT_Entropy_genotype_treatment.txt" # sys.argv[1]      #name output file for gap statistics
 namein= "fftValues_re"                        # "Log" #sys.argv[2]       #name inputfiles without iterator
 start = 1                               # int(sys.argv[3]) #start index ->1
 end = 24                                # int(sys.argv[4])+1 #end index ->13 !!!! 27 !!!!
@@ -65,6 +65,7 @@ D=4                                    # number of perumtable data points  D=2: 
 Lagmax=20                               # maximum lag parameter of patterns D=3, Lag=1: +++ Lag=2: + + +
 colind=3                                # collumn index of file data: 1, fft data: 3
 cutoff=5                                # cutoff value that is used to omit FT values at low frequencies
+#END of INPUT. From now on, there is no need to change the code
 ################################################################################################
 
 #kappa_p=10.0    # smoothing parameter of Kernel function -> kappa large strong smoothing and vice versa (PEAK STATISTICS SMOOTHING)

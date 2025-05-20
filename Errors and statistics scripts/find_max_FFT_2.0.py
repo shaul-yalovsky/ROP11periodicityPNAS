@@ -5,10 +5,12 @@ import sys
 def Smoothing_Kernel(x,X,kappa):      #X is data position, x is auxiliary position, kappa is smoothing parameter
     return 1.0/(math.sqrt(math.pi)*kappa)*math.exp(-(X-x)*(X-x)/kappa)  #gaussian bell shaped curve normalized to unity
 
-k_i = 1 #int(sys.argv[1]) #first FT file index
-k_f = 18 #int(sys.argv[max_file_index]) #last FT file index
-name = "fftValues_re" #str(sys.argv[fftValues])#name of FT file without .dat
-kappa=10.0 # use much larger value to smooth spectra significantly
+#INPUT PARAMETERS 
+k_i = 1 #here the first FT file index #int(sys.argv[1])
+k_f = 18 #here the last FT file index #int(sys.argv[max_file_index]) 
+name = "fftValues" #str(sys.argv[fftValues])#name of FT file without extension (for example .txt .dat)
+kappa=10.0 #degree of the smoothing parameter #this parameter should be set for all of the measurements #use much larger value to smooth spectra significantly
+#END of input. No more modifications needed to run the script
 
 #determine all frequencies where the spectra are maximal
 x_max=[]

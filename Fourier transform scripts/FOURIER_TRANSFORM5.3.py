@@ -53,11 +53,11 @@ def SI_calc(symb,Lag,D):
 
 ################################################################################################
 # INPUT PARAMETERS #
-nameout= "SMOOTHED_test_kappa_0.01.txt" #sys.argv[1]      #name output file for gap statistics
-namein= "Values" #"Log" #sys.argv[2]       #name inputfiles without iterator
+nameout= "SMOOTHED_genotype_treatment.txt" #sys.argv[1]      #name output file for gap statistics
+namein= "Values" #"Log" #sys.argv[2]       #name input files without iterator (meaning no number and no extension)
 start = 1 #int(sys.argv[3]) #start index ->1
-end = 9 #int(sys.argv[4])+1 #end index ->13 !!!! 27 !!!!
-kappa= 0.001 #float(sys.argv[5]) #smoothing parameter of Kernel function -> kappa large strong smoothing and vice versa (SPECTRAL SMOOTHING)
+end = 9 #int(sys.argv[4])+1 #end index according to the number of the samples analyzed
+kappa= 0.1 #float(sys.argv[5]) #smoothing parameter of Kernel function -> kappa large strong smoothing and vice versa (SPECTRAL SMOOTHING)
 smoothFFT=1 #1=>FFT calculated for each file and smoothing of FFT data, 0=> FFT calculated for each file but smoothing of file data itself
 delim = '\t'  # delimited used to separate colums
 ending = ".txt" # file endings
@@ -69,6 +69,7 @@ hmax=350.0      # range of peak statistics
 D=4             # number of perumtable data points  D=2: ++ D=3: +++ D=4: ++++
 Lagmax=20       # maximum lag parameter of patterns D=3, Lag=1: +++ Lag=2: + + +
 kappa_p=10.0    # smoothing parameter of Kernel function -> kappa large strong smoothing and vice versa (PEAK STATISTICS SMOOTHING)
+#END of INPUT. From here there is no need to modify the file.
 ################################################################################################
 
 

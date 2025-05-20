@@ -42,11 +42,12 @@ def Smoothing_Kernel(x,X,kappa):      #X is data position, x is auxiliary positi
 
 ################################################################################################
 # INPUT PARAMETERS #
-nameout= "Error_Col-0_mock.txt" #sys.argv[1]      #name output file for gap statistics
-namein= "SMOOTHED_ABA_kappa_0.1.txt" #"Log" #sys.argv[2]       #name inputfiles without iterator
+nameout= "Error_genotype_treatment.txt" #sys.argv[1]      #name output file for gap statistics
+namein= "SMOOTHED_genotype_treatment.txt" #"Log" #sys.argv[2]       #name inputfiles without iterator
 delim = ' '  # delimited used to separate colums
 skip_lines = 0
 th=10.0 #averaging cutoff
+#end of INPUT. No need to modify the script from here
 ################################################################################################
 
 fin=open(namein,'r')#-> might be .dat instead of .txt

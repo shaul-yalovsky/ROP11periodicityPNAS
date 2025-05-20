@@ -53,7 +53,7 @@ def SI_calc(symb,Lag,D):
 
 ################################################################################################
 # INPUT PARAMETERS #
-nameout= "result_rop1051_Mock_D3.txt" # sys.argv[1]      #name output file for gap statistics
+nameout= "result_genotype_treatment.txt" # sys.argv[1]      #name output file for gap statistics
 namein= "Values"                        # "Log" #sys.argv[2]       #name inputfiles without iterator
 start = 1                               # int(sys.argv[3]) #start index ->1
 end = 18                                # int(sys.argv[4])+1 #end index ->13 !!!! 27 !!!!
@@ -61,10 +61,11 @@ delim = '\t'                            # delimited used to separate colums
 ending = ".txt"                         # file endings
 Nh=100                                  # number of statistical bins (peak entropy)
 hmax=350.0                              # range of peak statistics
-D=3                                    # number of perumtable data points  D=2: ++ D=3: +++ D=4: ++++
+D=3                                     # number of perumtable data points  D=2: ++ D=3: +++ D=4: ++++
 Lagmax=20                               # maximum lag parameter of patterns D=3, Lag=1: +++ Lag=2: + + +
 colind=1                                # collumn index of file data: 1, fft data: 3
 cutoff=5                                # cutoff value that is used to omit FT values at low frequencies
+#END of INPUT. From here there is no need to change the script to run the experiment
 ################################################################################################
 
 #kappa_p=10.0    # smoothing parameter of Kernel function -> kappa large strong smoothing and vice versa (PEAK STATISTICS SMOOTHING)
